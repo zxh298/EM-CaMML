@@ -12,7 +12,7 @@ We suggest using Eclipse to open EM-CaMML: </br>
 4. Windows only: Still in the "Run As" dialog, go to the "Environment" tab and create a new "PATH" variable with value:
    your NeticaJ path;%PATH% (e.g., C:\NeticaJ_418\bin\x64_bin;%PATH%)
 
-Please note we suggest to use .arff format data as input. 
+Please note we suggest to use .arff format data as input and run EM-CaMML/Camml/camml/core/newgui/RunGUI.java to start using the latent variable discovery function.
 
 EM-CaMML is still under development. It will be very appreciated for any feedback and comments. Please report any bug to Xuhui Zhang (zxh298@gmail.com)
 
