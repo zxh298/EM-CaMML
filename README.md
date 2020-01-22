@@ -1,7 +1,7 @@
 Quick guide to getting EM-CaMML started (updated 20-01-2020):
 
-EM-CaMML is based on the original version of CaMML: https://github.com/rodneyodonnell/CaMML
-It is still under development and we suggest using Eclipse to open EM-CaMML: </br>
+EM-CaMML is based on the original version of CaMML: https://github.com/rodneyodonnell/CaMML </br>
+We suggest using Eclipse to open EM-CaMML: </br>
 
 1. Make to clone to Eclipse from GitHub.</br>
 2. In the "Project Properties" dialog, choose the "Java Build Path" link, then click on the "Libraries" tab, </br>
@@ -14,6 +14,6 @@ It is still under development and we suggest using Eclipse to open EM-CaMML: </b
 
 Please note we suggest to use .arff format data as input. 
 
-It will be very appreciated for any feedback and comments. Please report any bug to Xuhui Zhang (zxh298@gmail.com)
+EM-CaMML is still under development. It will be very appreciated for any feedback and comments. Please report any bug to Xuhui Zhang (zxh298@gmail.com)
 
 
