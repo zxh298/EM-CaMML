@@ -720,7 +720,12 @@ public class BNetNetica extends BNet
     }
 
     /** Calculate KL divergence between params1 and params2.
-     *  This is a convenince function for exactKLNetica.*/
+     *  This is a convenince function for exactKLNetica.
+     *  
+     *  Warning ! This KL implementation ignores the cpt state label, 
+     *  you have to make sure the cpt probability values are in same 
+     *  state lebal order in params1 and params2
+     *  */
     public double klExact( Value.Vector params1, Value.Vector params2 ) {
         try {
             return exactKLNetica(
