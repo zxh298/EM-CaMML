@@ -1422,6 +1422,10 @@ public abstract class BNet extends Value.Model
         return result;
     }
     
+    /** Warning ! This klExact function ignores the cpt state label, 
+     *  you have to make sure the cpt probability values are in same 
+     *  state lebal order in params1 and params2
+     *  */
     public double ckl_marginalise( Value.Vector paramsP, Value.Vector paramsQ, int prior ) {
         Value.Structured my1, my2;
         double multiplier;
