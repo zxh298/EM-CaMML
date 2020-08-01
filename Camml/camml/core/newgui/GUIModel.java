@@ -804,6 +804,9 @@ public class GUIModel implements GUIParameters {
 			double bestLatentCost1 = finalLatentModelCost;
 			double bestObservedCost2 = getMMLCost_onlyObserved(data);
 			
+		        // we need to put the ln(k!) back, this is not ideal. The best way is to consider ln(k!) during sampling
+			bestLatentCost1 = bestLatentCost1 + Math.log(factorial(result_node_number));
+			bestObservedCost2 = bestObservedCost2 + Math.log(factorial(result_node_number-1));
 			
 			// ignore the latent model
 			if (bestObservedCost2 <= bestLatentCost1) {
@@ -821,6 +824,11 @@ public class GUIModel implements GUIParameters {
 		}
 	}
 
+	public static double factorial(int n) {
+            if (n == 0) { return 1.0; }
+            else { return n * factorial(n-1); }
+        }
+	
 	/**
 	 * Generate full results. After calling this function, results can be obtained
 	 * from: GUIModel.searchResults or GUIModel.searchResultsDBN
